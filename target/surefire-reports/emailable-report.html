@@ -9,18 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Ethereal Automation Suite</th></tr>
-<tr><td><a href="#t0">Inbox Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,897</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Inbox Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">68,756</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Ethereal Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Inbox Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ReadEmailTest</td><td><a href="#m0">readEmailDetails</a></td><td rowspan="1">1766982767844</td><td rowspan="1">14898</td></tr><tr><th colspan="4">Inbox Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.OpenFirstEmailTest</td><td><a href="#m1">openFirstEmail</a></td><td rowspan="1">1766982746083</td><td rowspan="1">19755</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Ethereal Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Inbox Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ReadEmailTest</td><td><a href="#m0">readEmailDetails</a></td><td rowspan="1">1766983268017</td><td rowspan="1">33616</td></tr><tr><th colspan="4">Inbox Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.OpenFirstEmailTest</td><td><a href="#m1">openFirstEmail</a></td><td rowspan="1">1766983236745</td><td rowspan="1">28554</td></tr></tbody>
 </table>
-<h2>Inbox Tests</h2><h3 id="m0">tests.ReadEmailTest#readEmailDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:365)
-	at java.base/java.util.ArrayList.get(ArrayList.java:428)
-	at component.EmailListComponent.getRowByIndex(EmailListComponent.java:33)
-	at tests.ReadEmailTest.readEmailDetails(ReadEmailTest.java:27)
+<h2>Inbox Tests</h2><h3 id="m0">tests.ReadEmailTest#readEmailDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //strong[text()=&apos;Subject:&apos;]/following-sibling::span (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sushm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57900}, goog:processID: 28212, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57900/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c836710582a09513c73545506e4cc9fa
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at core.WaitManager.waitforElementVisible(WaitManager.java:22)
+	at pages.MessageViewPage.getSubject(MessageViewPage.java:25)
+	at tests.ReadEmailTest.readEmailDetails(ReadEmailTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">tests.OpenFirstEmailTest#openFirstEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
