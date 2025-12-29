@@ -1,0 +1,10 @@
+C:\EmailAutomation\gmail\src\main\java\base\BasePage.java
+C:\EmailAutomation\gmail\src\main\java\businessFlows\LoginFlow.java
+C:\EmailAutomation\gmail\src\main\java\component\EmailListComponent.java
+C:\EmailAutomation\gmail\src\main\java\component\EmailRowComponent.java
+C:\EmailAutomation\gmail\src\main\java\core\DriverFactory.java
+C:\EmailAutomation\gmail\src\main\java\core\WaitManager.java
+C:\EmailAutomation\gmail\src\main\java\pages\HomePage.java
+C:\EmailAutomation\gmail\src\main\java\pages\InboxPage.java
+C:\EmailAutomation\gmail\src\main\java\pages\LoginPage.java
+C:\EmailAutomation\gmail\src\main\java\pages\MessageViewPage.java

@@ -11,13 +11,15 @@ public class ReadEmailTest extends BaseTest {
 
 	@Test
 	public void readEmailDetails() {
-		LoginFlow login = new LoginFlow(new LoginPage(driver, wait));
-		login.doLogin("jennyfer.donnelly22@ethereal.email", "jHt52AwPf7NcFXEPKP");
+	     LoginFlow login = new LoginFlow(new LoginPage(driver, wait));
+	     InboxPage inbox=   login.doLogin(
+	            "jennyfer.donnelly22@ethereal.email",
+	            "jHt52AwPf7NcFXEPKP"
+	        ).gotoMessage();
+	        
+	      
 
-		InboxPage page = new InboxPage(driver, wait);
-		page.openInbox();
-
-		MessageViewPage view = page.getEmailList().getRowByIndex(0).openEmail();
+		MessageViewPage view = inbox.getEmailList().getRowByIndex(0).openEmail();
 		
 		System.out.println("Subject:"+ view.getSubject());
         System.out.println("FROM: " + view.getFrom());

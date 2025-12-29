@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-29T12:32:23 SGT" name="Ethereal Automation Suite" finished-at="2025-12-29T12:33:03 SGT" duration-ms="39897">
+    <groups>
+    </groups>
+    <test started-at="2025-12-29T12:32:23 SGT" name="Inbox Tests" finished-at="2025-12-29T12:33:03 SGT" duration-ms="39897">
+      <class name="tests.ReadEmailTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReadEmailTest@4d5d943d]" started-at="2025-12-29T12:32:46 SGT" name="setup" finished-at="2025-12-29T12:32:47 SGT" duration-ms="1622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="readEmailDetails()[pri:0, instance:tests.ReadEmailTest@4d5d943d]" started-at="2025-12-29T12:32:47 SGT" name="readEmailDetails" finished-at="2025-12-29T12:33:02 SGT" duration-ms="14898" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+at java.base/java.util.Objects.checkIndex(Objects.java:365)
+at java.base/java.util.ArrayList.get(ArrayList.java:428)
+at component.EmailListComponent.getRowByIndex(EmailListComponent.java:33)
+at tests.ReadEmailTest.readEmailDetails(ReadEmailTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readEmailDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ReadEmailTest@4d5d943d]" started-at="2025-12-29T12:33:02 SGT" name="tearDown" finished-at="2025-12-29T12:33:03 SGT" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ReadEmailTest -->
+      <class name="tests.OpenFirstEmailTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.OpenFirstEmailTest@436813f3]" started-at="2025-12-29T12:32:23 SGT" name="setup" finished-at="2025-12-29T12:32:26 SGT" duration-ms="2866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openFirstEmail()[pri:0, instance:tests.OpenFirstEmailTest@436813f3]" started-at="2025-12-29T12:32:26 SGT" name="openFirstEmail" finished-at="2025-12-29T12:32:45 SGT" duration-ms="19755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openFirstEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OpenFirstEmailTest@436813f3]" started-at="2025-12-29T12:32:45 SGT" name="tearDown" finished-at="2025-12-29T12:32:46 SGT" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.OpenFirstEmailTest -->
+    </test> <!-- Inbox Tests -->
+  </suite> <!-- Ethereal Automation Suite -->
+</testng-results>

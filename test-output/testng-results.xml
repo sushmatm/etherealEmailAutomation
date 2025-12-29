@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-29T09:26:52 SGT" name="Default suite" finished-at="2025-12-29T09:27:13 SGT" duration-ms="20224">
+  <suite started-at="2025-12-29T12:35:14 SGT" name="Ethereal Automation Suite" finished-at="2025-12-29T12:36:06 SGT" duration-ms="52154">
     <groups>
     </groups>
-    <test started-at="2025-12-29T09:26:52 SGT" name="Default test" finished-at="2025-12-29T09:27:13 SGT" duration-ms="20224">
-      <class name="tests.OpenFirstEmailTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.OpenFirstEmailTest@6f03482]" started-at="2025-12-29T09:26:53 SGT" name="setup" finished-at="2025-12-29T09:26:54 SGT" duration-ms="1815" status="PASS">
+    <test started-at="2025-12-29T12:35:14 SGT" name="Inbox Tests" finished-at="2025-12-29T12:36:06 SGT" duration-ms="52154">
+      <class name="tests.ReadEmailTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReadEmailTest@55b0dcab]" started-at="2025-12-29T12:35:48 SGT" name="setup" finished-at="2025-12-29T12:35:49 SGT" duration-ms="1341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openFirstEmail()[pri:0, instance:tests.OpenFirstEmailTest@6f03482]" started-at="2025-12-29T09:26:54 SGT" name="openFirstEmail" finished-at="2025-12-29T09:27:13 SGT" duration-ms="18181" status="PASS">
+        <test-method signature="readEmailDetails()[pri:0, instance:tests.ReadEmailTest@55b0dcab]" started-at="2025-12-29T12:35:49 SGT" name="readEmailDetails" finished-at="2025-12-29T12:36:06 SGT" duration-ms="16594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readEmailDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ReadEmailTest@55b0dcab]" started-at="2025-12-29T12:36:06 SGT" name="tearDown" finished-at="2025-12-29T12:36:06 SGT" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ReadEmailTest -->
+      <class name="tests.OpenFirstEmailTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.OpenFirstEmailTest@179ece50]" started-at="2025-12-29T12:35:14 SGT" name="setup" finished-at="2025-12-29T12:35:17 SGT" duration-ms="2702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openFirstEmail()[pri:0, instance:tests.OpenFirstEmailTest@179ece50]" started-at="2025-12-29T12:35:17 SGT" name="openFirstEmail" finished-at="2025-12-29T12:35:47 SGT" duration-ms="30675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFirstEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OpenFirstEmailTest@6f03482]" started-at="2025-12-29T09:27:13 SGT" name="tearDown" finished-at="2025-12-29T09:27:13 SGT" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OpenFirstEmailTest@179ece50]" started-at="2025-12-29T12:35:47 SGT" name="tearDown" finished-at="2025-12-29T12:35:48 SGT" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.OpenFirstEmailTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Inbox Tests -->
+  </suite> <!-- Ethereal Automation Suite -->
 </testng-results>

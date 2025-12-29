@@ -1,0 +1,10 @@
+base\BasePage.class
+component\EmailListComponent.class
+pages\LoginPage.class
+pages\MessageViewPage.class
+pages\HomePage.class
+businessFlows\LoginFlow.class
+core\DriverFactory.class
+component\EmailRowComponent.class
+core\WaitManager.class
+pages\InboxPage.class
